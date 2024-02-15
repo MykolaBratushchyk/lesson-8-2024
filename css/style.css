@@ -1,0 +1,568 @@
+@font-face {
+	font-family: "Lato";
+	src: url(../fonts/lato/Lato-Regular.woff2) format(woff2), url(../fonts/lato/Lato-Regular.woff) format(woff);
+	font-display: swap;
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Lato";
+	src: url(../fonts/lato/Lato-Bold.woff2) format(woff2), url(../fonts/lato/Lato-Bold.woff) format(woff);
+	font-display: swap;
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Lato";
+	src: url(../fonts/lato/Lato-Black.woff2) format(woff2), url(../fonts/lato/Lato-Black.woff) format(woff);
+	font-display: swap;
+	font-weight: 900;
+	font-style: normal;
+}
+
+/* ======================МАКЕТ====================== */
+[class*="__container"]{
+	max-width: 1270px;
+	margin: 0 auto;
+	padding: 20px 20px;
+}
+
+.page {
+	font-family: "Lato";
+	line-height: 160%;
+	color: #424551;
+}
+.courses {
+}
+.courses__container {
+}
+.courses__about {
+}
+.about {
+}
+.about__title {
+	font-weight: 900;
+	font-size: 46px;
+	line-height: 130%;
+	color: #1E212C;
+	margin-bottom: 40px;
+}
+.about__title:hover {
+	text-shadow: 2px 2px 2px #FF3F3A;
+}
+.about__text {
+	margin-bottom: 48px;
+}
+.about__list-title {
+	font-weight: 700;
+	font-size: 28px;
+	line-height: 150%;
+	color: #1E212C;
+	margin-bottom: 24px;
+}
+.about__list-title:hover {
+}
+.about__list {
+	margin-bottom: 118px;
+}
+.about__item {
+}
+.about__item::before {
+	content: "";
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+	background: url(../img/fig/check.svg) 0 0 no-repeat;
+	margin-right: 16px;
+}
+
+.about__item:hover::before{
+	box-shadow: 2px 2px 2px 2px #FF3F3A;
+}
+.courses__curator {
+}
+.curator {
+}
+.curator>*:last-child {
+	margin-bottom: 0px;
+}
+.curator__subtitle {
+	font-weight: 700;
+	line-height: 150%;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	color: #1E212C;
+	margin-bottom: 8px;
+}
+.curator__title {
+	font-weight: 900;
+	font-size: 46px;
+	line-height: 130%;
+	color: #1E212C;
+	margin-bottom: 16px;
+}
+.curator__regalies {
+	font-size: 20px;
+	line-height: 150%;
+	color: #787A80;
+	margin-bottom: 32px;
+}
+.curator__list {
+	margin-bottom: 32px;
+}
+.curator__item {
+	margin-bottom: 4px;
+	font-weight: 700;
+}
+.curator__item span:hover {
+	text-decoration: underline;
+}
+.curator__item:hover::before {
+	opacity: 0;
+}
+.curator__item:first-child::before {
+	content: "";
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+	background: url(../img/fig/star.png) 0 2px / 14px  no-repeat;
+	margin-right: 8px;
+	transition: all 0.8s ease 0s;
+}
+.curator__item:nth-child(2)::before {
+	content: "";
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+	background: url(../img/fig/play.png) 0 2px / 14px  no-repeat;
+	margin-right: 8px;
+}
+.curator__item:last-child::before {
+	content: "";
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+	background: url(../img/fig/profile.png) 0 2px / 14px  no-repeat;
+	margin-right: 8px;
+}
+.curator__text {
+	margin-bottom: 40px;
+}
+.curator__contacts {
+	margin-bottom: 40px;
+}
+.curator__f-icon {
+	width: 24px;
+	height: 24px;
+	background: url(../img/fig/facebook.png) center / 13px no-repeat;
+	display: inline-block;
+}
+.curator__f-icon:hover {
+	box-shadow: 2px 2px 2px 2px #000;
+
+}
+.curator__be-icon {
+	width: 24px;
+	height: 24px;
+	background: url(../img/fig/behance.png)  center / 16px no-repeat;
+	display: inline-block;
+}
+.curator__be-icon:hover {
+	box-shadow: 2px 2px 2px 2px #000;
+
+}
+.curator__t-icon {
+	width: 24px;
+	height: 24px;
+	background: url(../img/fig/twitter.png)  center / 26px no-repeat;
+	display: inline-block;
+}
+.curator__t-icon:hover {
+	box-shadow: 2px 2px 2px 2px #000;
+
+}
+.curator__in-icon {
+	width: 24px;
+	height: 24px;
+	background: url(../img/fig/linked-In.png)  center / 26px no-repeat;
+	display: inline-block;
+}
+.curator__in-icon:hover {
+	box-shadow: 2px 2px 2px 2px #FF3F3A;
+
+}
+
+.curator__contacts div:not(:last-child){
+	margin-right: 24px;
+}
+
+
+/* ======================Відпрацювання====================== */
+
+.homework {
+	font-size: 20px;
+}
+.homework__container {
+}
+.homework__section {
+}
+
+.homework__section div{
+	margin-bottom: 30px;
+	background-color: #cccccc;
+	padding: 2%;
+	border-radius: 10px;
+	border: 2px solid #000;
+}
+.homework__section-title {
+	font-weight: 900;
+	font-size: 52px;
+	line-height: 130%;
+	color: #1E212C;
+	text-align: center;
+	margin-bottom: 26px;
+	border: 3px solid #1E212C;
+	border-radius: 10px;
+	padding: 15px;
+	background-color: #9176f2;
+}
+.homework__section-title:last-child {
+	background-color: #ec4141;
+}
+.homework__hover {
+}
+.hover {
+
+}
+.hover>* {
+	margin-bottom: 16px;
+}
+.hover__title {
+	font-weight: 700;
+	font-size: 40px;
+	line-height: 130%;
+	color: #1E212C;
+	text-transform: uppercase;
+}
+.hover__text {
+}
+.hover__text:hover {
+	text-align: right;
+}
+.hover__link {
+	color: #FF3F3A;
+	display: inline-block;
+	background-color: #474748;
+	padding: 10px 30px;
+	border: 2px solid #FF3F3A;
+	border-radius: 10px;
+	box-shadow: 0px 15px 0px 0px #1E212C;
+}
+.hover__link:hover {
+	box-shadow: 0px 10px 0px 0px #1E212C;
+	margin-top: 5px;
+}
+
+.hover__list-title {
+}
+.hover__list {
+}
+.hover__item:nth-child(3):hover ul{
+	opacity: 1;
+	display: block;
+}
+.hover__item ul{
+	opacity: 0;
+	display: none;
+}
+.homework__active {
+}
+
+.active>* {
+	margin-bottom: 16px;
+}
+.active__title {
+	font-weight: 700;
+	font-size: 40px;
+	line-height: 130%;
+	color: #1E212C;
+	margin-bottom: 16px;
+	text-transform: uppercase;
+}
+.active__text {
+}
+.active__link {
+	color: #FF3F3A;
+	display: inline-block;
+	background-color: #474748;
+	padding: 10px 30px;
+	border: 2px solid #FF3F3A;
+	border-radius: 10px;
+	box-shadow: 0px 15px 0px 0px #1E212C;
+}
+.active__link:active {
+	box-shadow: 0px 10px 0px 0px #1E212C;
+	margin-top: 5px;
+}
+.active__list-title {
+}
+.active__list {
+}
+.active__item {
+}
+.homework__visited {
+}
+.visited>* {
+		margin-bottom: 16px;
+	}
+.visited__title {
+	font-weight: 700;
+	font-size: 40px;
+	line-height: 130%;
+	color: #1E212C;
+	margin-bottom: 16px;
+	text-transform: uppercase;
+}
+.visited__text {
+}
+.visited__link {
+	color: #FF3F3A;
+	display: inline-block;
+	background-color: #474748;
+	padding: 10px 30px;
+	border: 2px solid #FF3F3A;
+	border-radius: 10px;
+	box-shadow: 10px 10px 10px 5px #1E212C;
+}
+.visited__link:visited {
+	background-color: #fff;
+	color: #1E212C;
+	border: 2px solid #1E212C;
+}
+.visited__list-title {
+}
+.visited__list {
+}
+.visited__item {
+}
+.homework__focus {
+}
+.focus>* {
+	margin-bottom: 16px;
+}
+.focus__title {
+	font-weight: 700;
+	font-size: 40px;
+	line-height: 130%;
+	color: #1E212C;
+	margin-bottom: 16px;
+	text-transform: uppercase;
+}
+.focus__text {
+}
+.focus__link {
+	color: #FF3F3A;
+	display: inline-block;
+	background-color: #474748;
+	padding: 10px 30px;
+	border: 2px solid #FF3F3A;
+	border-radius: 10px;
+	box-shadow: 10px 10px 10px 5px #1E212C;
+}
+.focus__link:focus {
+	outline: 2px solid #4b20ea;
+}
+
+.focus__list-title {
+}
+.focus__list {
+}
+.focus__item {
+}
+.homework__target {
+}
+.target>* {
+	margin-bottom: 16px;
+}
+.target__title {
+	font-weight: 700;
+	font-size: 40px;
+	line-height: 130%;
+	color: #1E212C;
+	margin-bottom: 16px;
+	text-transform: uppercase;
+}
+.target__text:target {
+	background-color: #e74646;
+	padding: 10px;
+	border-radius: 10px;
+}
+.target__link {
+	color: #FF3F3A;
+	display: inline-block;
+	background-color: #474748;
+	padding: 10px 30px;
+	border: 2px solid #FF3F3A;
+	border-radius: 10px;
+	box-shadow: 10px 10px 10px 5px #1E212C;
+	text-transform: uppercase;
+	display: inline-block;
+}
+.target a:first-of-type {
+	margin-right: 30px;
+}
+.target__list-title {
+}
+.target__list {
+}
+.target__item{
+}
+.homework__first-child {
+}
+.first-child>* {
+	margin-bottom: 16px;
+}
+.first-child__title {
+	font-weight: 700;
+	font-size: 40px;
+	line-height: 130%;
+	color: #1E212C;
+	text-transform: uppercase;
+}
+.first-child__title:first-child {
+	margin-bottom: 30px;
+}
+.first-child__text:first-of-type {
+	background-color: #41abed;
+	padding: 10px;
+	border-radius: 10px;
+}
+.first-child__link {
+}
+.homework__last-child {
+}
+.last-child>* {
+	margin-bottom: 16px;
+}
+.last-child__title {
+	font-weight: 700;
+	font-size: 40px;
+	line-height: 130%;
+	color: #1E212C;
+	margin-bottom: 16px;
+	text-transform: uppercase;
+}
+.last-child__text:last-of-type {
+	background-color: #33b144;
+	padding: 10px;
+	border-radius: 10px;
+}
+.last-child__link {
+}
+.last-child__link:last-child {
+	color: yellow;
+}
+.homework__nth-child {
+}
+.nth>* {
+	margin-bottom: 16px;
+}
+.nth>*:nth-child(4) {
+	color: #4b20ea;
+}
+.nth__title {
+	font-weight: 700;
+	font-size: 40px;
+	line-height: 130%;
+	color: #1E212C;
+	margin-bottom: 16px;
+	text-transform: uppercase;
+}
+.nth__text:nth-child(3) {
+		background-color: #fff953;
+		padding: 10px;
+		border-radius: 10px;
+	}
+	.nth__text:nth-child(6) {
+		background-color: #fff953;
+		padding: 10px;
+		border-radius: 10px;
+	}
+.nth__link {
+}
+.homework__not {
+}
+/* .not>* {
+	margin-bottom: 16px;
+} */
+.not>*:not(:last-of-type) {
+	margin-bottom: 16px;
+}
+.not__title {
+	font-weight: 700;
+	font-size: 40px;
+	line-height: 130%;
+	color: #1E212C;
+	margin-bottom: 16px;
+	text-transform: uppercase;
+}
+.not__text {
+}
+.not__link {
+}
+.homework__before {
+}
+.before>* {
+	margin-bottom: 16px;
+}
+.before__title {
+	font-weight: 700;
+	font-size: 40px;
+	line-height: 130%;
+	color: #1E212C;
+	margin-bottom: 16px;
+	text-transform: uppercase;
+}
+.before__list {
+}
+.before__link {
+}
+.before__link a::before {
+	content: "";
+	width: 20px;
+	height: 20px;
+	background: url(../img/fig/star.png) 0 3px / 16px no-repeat;
+	display: inline-block;
+	margin-right: 12px;
+}
+.homework__after {
+}
+.after>* {
+	margin-bottom: 16px;
+}
+.after__title {
+	font-weight: 700;
+	font-size: 40px;
+	line-height: 130%;
+	color: #1E212C;
+	margin-bottom: 16px;
+	text-transform: uppercase;
+}
+.after__list .after__link::after {
+	content: "";
+	width: 18px;
+	height: 18px;
+	display: inline-block;
+	background: url(../img/fig/check.svg) 0 2px / 16px no-repeat;
+	text-align: right;
+} 
+.after__link a{
+}
+
+
+/* ====================== Гра ====================== */
+
+.footer {
+}
